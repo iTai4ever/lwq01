@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/top_label_common.css">
+    <link rel="stylesheet" href="../css/deal_confirmation.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="icon" href="../images/logo.ico" type="image/x-icon"/>
+    <script src="../js/jquery-1.6.2.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>TAIOS配件商城</title>
+</head>
+<body>
+<!--头部导航-->
+<div id="header">
+    <!--头部导航-->
+    <header class="header_outbox">
+        <div class="header_inbox">
+            <div class="loginbox">
+                <p> 欢迎进入TAIOS配件商城</p>
+                <a href="index.html" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ 访问官网 ]</a>
+                <span id="register-info">
+		            <a href="login.html" class="login">&nbsp;&nbsp;&nbsp;&nbsp;登录&nbsp;&nbsp;</a>
+		            <img src="../images/header_line.png">
+		            <a href="register.html" class="login">&nbsp;&nbsp;免费注册&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	            </span>
+                <span id="login-info" style="display: none;">
+	            	<a href="information_modification.html" id="headerUsername" class="login"></a>
+		            <img src="../images/header_line.png">
+		            <a href="#" id="headerLogout" class="login">&nbsp;&nbsp;退出</a>
+	            </span>
+            </div>
+            <ul class="my_action fix">
+                <li>
+                    <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的关注</a>
+                </li>
+                <li>
+                    <img src="../images/mix_car.png">
+                    <a href="my_cart.html">购物车<span id="cartQuantity">[0]</span></a>
+                </li>
+                <li>
+                    <a href="index.html">我的商城</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--头部导航结束-->
+    <!--搜索栏开始-->
+    <div class="wrapper_box action_search_box">
+        <a href="index.html" class="logo"><img src="../images/logo_nav.png" alt=""></a>
+        <div class="inputbox">
+            <input type="text" style="text-align: left" name="keyword" id="keyword" value="" placeholder="海量商品，一搜即可">
+            <a class="searchbtn" href="javascript:search();">搜&nbsp;索</a>
+            <div class="hotword">热销：
+                <a href="product_detail.html?pid=14" target="_blank">&nbsp;&nbsp;&nbsp;龙太牌润滑油&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+        <img class="Qrcode" src="../images/nav_Qrcode.png" alt="">
+    </div>
+    <!--搜索栏结束-->
+</div>
+<hr style="color:#ffffff">
+<!--搜索栏结束-->
+<div class="content_box clearfix">
+    <!--侧标栏开始-->
+    <div class="left_nav l">
+        <!--        个人信息-->
+        <div class="person_info">
+            <div class="head_img">
+                <img src="../images/level.png" alt="">
+            </div>
+            <div class="welcome_info">
+                hi，小太，欢迎回来
+            </div>
+            <div class="level_score">
+                <div class="clearfix">
+                    <div class="l">会员等级:</div>
+                    <div class="level_value l">龙太</div>
+                </div>
+                <div class="clearfix">
+                    <div class="l">会员积分:</div>
+                    <div class="score_value l">0</div>
+                </div>
+            </div>
+        </div>
+        <!--        我的交易-->
+        <div>
+            <div class="row title">
+                <div class="dashed">我的交易</div>
+            </div>
+            <div class="item active"><a href="deal_list.html">我的订单</a></div>
+            <div class="item"><a href="my_cart.html">我的购物车</a></div>
+            <div class="item"><a href="#">我的积分购物车</a></div>
+            <div class="item"><a href="#">我的积分消费</a></div>
+            <div class="item"><a href="#">我的关注</a></div>
+            <div class="item"><a href="#">我的购买咨询</a></div>
+            <div class="item"><a href="#">我的优惠券</a></div>
+            <div class="item"><a href="address_management.html">我的地址管理</a></div>
+            <div class="item"><a href="#">我的推荐</a></div>
+
+        </div>
+        <!--        我的账户-->
+        <div id="my-accont">
+            <div class="title">
+                <div class="dashed">我的账户</div>
+            </div>
+            <div class="item"><a href="information_modification.html">个人资料</a></div>
+            <div class="item"><a href="password_modification.html">修改密码</a></div>
+        </div>
+    </div>
+    <div id="indoContent">
+    <!--选择收货地址区域-->
+    <div class="select_address">
+        <p>选择收货地址</p>
+        <ul id="iguo">
+            <!--            地址数据插入-->
+        </ul>
+    </div>
+
+    <!--确认订单信息-->
+    <div class="deal_info">
+        <div class="label_block">
+            <p class="label">确认订单信息</p>
+        </div>
+        <!--商品信息表-->
+        <table id="goods_info">
+            <thead>
+            <tr>
+                <th class="goods_name" width="30%">商品名称</th>
+                <th class="goods_price" width="17%">单价（元）</th>
+                <th class="goods_quantity" width="17%">数量</th>
+                <th class="goods_total" width="18%">商品总价</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--            商品数据插入-->
+            </tbody>
+        </table>
+        <div class="submit">
+            <span class="label">订单总额：￥</span>
+            <span id="price"></span>
+            <span id="submit">立即购买</span>
+        </div>
+    </div>
+    </div>
+    <!--右侧部分结束-->
+</div>
+<!--尾部开始-->
+<div id="footer_shadow"></div>
+<script>
+    $("#footer_shadow").load("./footer.html");
+</script>
+
+</body>
+<script src="../js/commonURL.js"></script>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/handlebars-v4.1.2.js"></script>
+<script src="../js/deal_confirmation.js"></script>
+<script id="addr_tpl" type="text/x-handlebars-template">
+    {{#each this}}
+        {{#if default_addr}}
+            <li class="addrItem selected" id="{{id}}">
+        {{else}}
+            <li class="addrItem">
+        {{/if}}
+            <div class="address_block">
+                <div class="receiver_name">
+                    <strong><span id="name">{{name}}</span></strong>&nbsp;&nbsp;收
+                    {{#if default_addr}}
+                    <span class="default_address_label">默认地址</span>
+                    {{else}}
+                    <span class="label"></span>
+                    {{/if}}
+                </div>
+                <div class="receiver_address" style="height:25px">
+                    <span id="address">
+                        {{province}}{{city}}{{district}}{{addr}};
+                    </span>
+                </div>
+                <div class="receiver_phone">
+                    <span id="phone">
+                        {{mobile}}
+                    </span>
+                </div>
+                <a class="deleteAddr {{id}}">
+                    删除
+                </a>
+                {{#unless default_addr}}
+                <a class="setDefault {{id}}">
+                    设为默认地址
+                </a>
+                {{/unless}}
+            </div>
+        </li>
+    {{/each}}
+</script>
+<script id="gooods_tpl" type="text/x-handlebars-template">
+    {{#each this}}
+    <tr>
+        <td class="goods_name">
+            <a href="product_detail.html?pid={{productId}}" style="text-decoration:none" target="_blank">{{name}}</a>
+        </td>
+        <td class="goods_price">￥&nbsp; {{price}}</td>
+        <td class="goods_quantity">×&nbsp;{{quantity}}</td>
+        <td class="goods_total">￥&nbsp; {{totalPrice}}</td>
+    </tr>
+    {{/each}}
+</script>
+</html>

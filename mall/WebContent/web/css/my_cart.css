@@ -1,0 +1,120 @@
+.cart_container{
+    width: 100%;
+}
+.cart_container>h1{
+    margin-left: 200px;
+}
+
+.info_head{
+    height: 34px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-top: 3px solid #E74F4D;
+    margin-top: 25px;
+    color: #666666;
+}
+.info_head>div{
+    float: left;
+    width: 16.5%;
+    text-align: center;
+    line-height: 30px;
+}
+.info_list{
+    height: 78px;
+    display: block;
+    border: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+.info_list>div{
+    float: left;
+    width: 13.8%;
+    line-height: 78px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+    height: 78px;
+}
+.goods_num input{
+    float: left;
+    margin-top: 25px;
+    width: 40px;
+    height: 28px;
+    outline: none;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    cursor: pointer;
+}
+.minus_btn{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 28px;
+    height: 34px;
+    background-image: url("../images/common/minus_btn.png");
+    background-repeat: no-repeat;
+}
+.minus_btn:hover{
+    cursor: pointer;
+}
+.plus_btn{
+    float: left;
+    margin-top: 25px;
+    width: 28px;
+    height: 34px;
+    background-image: url("../images/common/plus_btn.png");
+    background-repeat: no-repeat;
+}
+.plus_btn:hover{
+    cursor: pointer;
+}
+.submit_block{
+    width: 910px;
+    height: 45px;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+#label,#total_price{
+    display: inline-block;
+}
+#label{
+    margin-left: 63.5%;
+    margin-top: 10px;
+}
+#total_price{
+    color: #ffa500;
+    font-size: 20px;
+    padding:10px;
+}
+#submit{
+    position: absolute;
+    right: 210px;
+    background-color: #E74F4D;
+    color: #ffffff;
+    padding: 10px;
+}
+#submit:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#clear{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #E74F4D;
+    padding: 3px;
+}
+#clear:hover{
+    background-color: #E74F4D;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

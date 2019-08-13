@@ -1,0 +1,135 @@
+#infoContent{
+    /*margin-left: 300px;*/
+}
+.select_address{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d3d3d3;
+    width: 920px;
+    height: 200px;
+}
+.select_address>p{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.select_address>ul{
+    display: inline-block;
+    list-style:none;
+    overflow-y: auto;
+}
+#iguo{
+    margin-top: 20px;
+}
+#iguo li{
+    background-image: url("../images/common/shdz_bg.gif");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 303px;
+    height: 137px;
+}
+.selected{
+    background-image: url("../images/common/shdz_bgon.gif")!important;
+}
+.receiver_name{
+    border-bottom: 1px solid #c3c3c3;
+}
+.address_block{
+    /*display: inline-block;*/
+    /*!*border: 2px ridge #E74F4D;*!*/
+    /*overflow: auto;*/
+    /*width:200px;*/
+    /*height:190px;*/
+}
+.address_block div{
+    padding: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+.address_block .default_address_label{
+    position: relative;
+    top: -10px;
+    left: 70px;
+    width: 60px;
+    padding: 2px;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    background-color: #E74F4D;
+}
+.address_block a{
+    margin: 0 0 10px 10px;
+    text-decoration: none;
+    vertical-align: center;
+    padding: 5px;
+    color: #E74F4D;
+    border: none;
+}
+.address_block a:hover{
+    background-color: #E74F4D;
+    color: #ffffff;
+    cursor: pointer;
+}
+table{/*商品信息展示表格*/
+    margin: auto ;
+    width: 920px;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead{
+    background-color: #ececec;
+    border:1px solid #d3d3d3;
+}
+thead>tr{
+    height:40px;
+}
+td{
+    border:1px solid #a9a9a9;
+    height:50px;
+}
+.label_block{
+    border-bottom: 2px solid #E74F4D;
+    padding-left: 10px;
+}
+.label{
+    /*margin-left: 170px;*/
+    font-weight: bold;
+    font-size: 16px;
+}
+.submit{
+    padding: 0;
+    text-align: right;
+    background-color: #ececec;
+}
+.submit span{
+    display: inline-block;
+}
+#price{
+    color: #FF4400;
+    font-size: 20px;
+}
+#submit{
+    background-color: #E74F4D;
+    color: #ffffff;
+    padding: 16px;
+}
+#submit:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#addAddr{
+    width: 70px;
+    margin: 20px;
+    padding: 3px;
+    display: block;
+    background-color: #E74F4D;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+#addAddr:hover{
+    font-weight: bold;
+}

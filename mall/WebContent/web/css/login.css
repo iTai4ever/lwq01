@@ -1,0 +1,134 @@
+@charset "utf-8";
+.input{
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+.login_box{
+    width:730px;
+    margin:0 auto;
+    margin-top:42px;
+    height:400px;
+}
+
+.login_box_left{float: left}
+
+.login_box_left h1{
+    font-size:23px;
+    font-weight: bold;
+    color: #333333;
+}
+
+login_box_login h2{
+    font-size:14px;
+    font-weight:normal;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.login_name_icon{
+    width:38px;
+    height: 38px;
+    background-image: url(../images/login_name_icon.jpg);
+    float: left;border-right: 1px solid #bdbdbd;
+}
+
+.login_name_box{border:1px solid #bdbdbd; overflow:hidden}
+
+.loginname{
+    width:284px;
+    height:36px;
+    outline:none;
+    padding-left:16px;
+    line-height:36px;
+}
+
+.login_code_icon{
+    width:38px;
+    height:38px;
+    background-image: url("../images/login_code_icon.jpg");
+    float: left;
+    /*display: inline-block;*/
+    border-right: 1px solid #bdbdbd;
+}
+
+.login_code_box{
+    overflow:hidden;margin-top:18px;margin-bottom:18px;
+}
+
+#username{
+    background-image: url("../images/login_name_icon.jpg");
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#password{
+    background-image: url("../images/login_code_icon.jpg");
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+.logincode{
+    width:284px;
+    height:36px;
+    outline:none;
+    padding-left: 8px;
+    line-height: 36px;
+}
+
+.forg_code_box{
+    margin-top: 20px;
+}
+
+.forg_code_box input{
+    padding-top: 10px;
+    /*display: block;*/
+    filoa:left;
+    width:15px;
+    height:15px;
+}
+
+.forg_code_box span{
+    line-height: 12px;
+    margin-right: 60px;
+    width:50px;
+}
+
+.forg_code_box a{
+    line-height: 12px;
+    color:black;
+    margin-left: 20px;
+}
+
+.login_btn{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    background-color: #E74F4D;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.login_tip,.check_code_tip{
+    margin-bottom: 5px;
+    color: #fb4343;
+}
+a:hover{
+    cursor: pointer;
+    color: #fb4343;
+}
+
+.header_add{
+    font-color:black;
+    font-family: Tahoma,Arial;
+    font-size: 35px;
+    font-weight:300;
+    margin-top: 30px;
+    position: absolute;
+    left:600px;
+    /*之前是300px*/
+    /*head:100px;*/
+}
+
+

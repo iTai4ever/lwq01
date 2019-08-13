@@ -1,0 +1,84 @@
+
+#deal_detail_container{/*订单详情展示区：div*/
+    border:1px solid #555555;
+    width: 918px;
+    float: left;
+}
+
+#deal_detail_container>div>a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 3px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    width:60px;
+}
+#deal_detail_container>div>a:hover{
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top_label_block{
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.top_label{
+    width:100px;
+    height:40px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size:18px;
+}
+.blank_box{/*订单状态和收货地址的显示区*/
+    border-bottom:1px solid #a9a9a9;
+}
+dt{
+    margin-left: 6px;
+    padding-left: 5px;
+    font-size: 18px;
+    border-left: 3px solid #E74F4D;
+}
+#deal_state,#deal_address{
+    padding-top:10px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+#deal_info_label{/*订单详细信息的显示*/
+    margin-bottom: 10px;
+}
+.deal_info_box>dd {/*信息显示格*/
+    display: inline-block;
+    padding:5px;
+    width:45%;
+}
+table{/*商品信息展示表格*/
+    margin:auto auto 20px auto;
+    width:95%;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead{
+    background-color: #d3d3d3;
+}
+thead>tr{
+    height:40px;
+}
+td{
+    border:1px solid #a9a9a9;
+    height:50px;
+}
+
+#orderPay{
+    background-color: #E74F4D;
+}
+#payCancel,#orderCancel{
+    background-color: #666666;
+}
+.btn{
+    padding: 3px;
+}
